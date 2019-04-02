@@ -48,12 +48,12 @@ namespace DAY4BootcampV2
                     case 3:
                         //Console.Write("Masukan ID : ");
                         //id = Convert.ToInt16(Console.ReadLine());
-                        iSupplier.Update(id, supplier);
+                        iSupplier.Update(supplier);
                         break;
                     case 4:
                         //Console.Write("Masukan ID : ");
                         //id = Convert.ToInt16(Console.ReadLine());
-                        iSupplier.Delete(id);
+                        iSupplier.Delete();
                         break;
                     default:
                         Console.Write("Maaf");
@@ -80,13 +80,13 @@ namespace DAY4BootcampV2
                     case 3:
                         Console.Write("Masukan ID : ");
                         id = Convert.ToInt16(Console.ReadLine());
-                        iItem.Update(id, item);
+                        iItem.Update(item);
                         Console.Read();
                         break;
                     case 4:
                         Console.Write("Masukan ID : ");
                         id = Convert.ToInt16(Console.ReadLine());
-                        iItem.Delete(id);
+                        iItem.Delete();
                         Console.Read();
                         break;
                     default :
@@ -113,13 +113,13 @@ namespace DAY4BootcampV2
                     case 3:
                         Console.Write("Masukan ID : ");
                         id = Convert.ToInt16(Console.ReadLine());
-                        iItem.Update(id, item);
+                        iItem.Update(item);
                         Console.Read();
                         break;
                     case 4:
                         Console.Write("Masukan ID : ");
                         id = Convert.ToInt16(Console.ReadLine());
-                        iItem.Delete(id);
+                        iItem.Delete();
                         Console.Read();
                         break;
                     default:
@@ -142,13 +142,13 @@ namespace DAY4BootcampV2
                     case 3:
                         Console.Write("Masukan ID : ");
                         id = Convert.ToInt16(Console.ReadLine());
-                        iItem.Update(id, item);
+                        iItem.Update(item);
                         Console.Read();
                         break;
                     case 4:
                         Console.Write("Masukan ID : ");
                         id = Convert.ToInt16(Console.ReadLine());
-                        iItem.Delete(id);
+                        iItem.Delete();
                         Console.Read();
                         break;
                     default:

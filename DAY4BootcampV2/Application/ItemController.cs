@@ -14,10 +14,11 @@ namespace DAY4BootcampV2
         TB_M_Items items = new TB_M_Items();
         TB_M_Suppliers supplier = new TB_M_Suppliers();
         bool status = false;
+        int id;
 
         Validation valid = new Validation(myContext);
         //Supplier supplier = new Supplier();
-        public bool Delete(int id)
+        public bool Delete()
         {
             //throw new NotImplementedException();
             if (Get(id) != null)
@@ -85,7 +86,7 @@ namespace DAY4BootcampV2
             } return status;
         }
 
-        public bool Update(int id, TB_M_Items items)
+        public bool Update(TB_M_Items items)
         {
             //throw new NotImplementedException();
             

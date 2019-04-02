@@ -13,6 +13,7 @@ namespace DAY4BootcampV2
         TB_M_Suppliers suppliers = new TB_M_Suppliers();
         static MyContext myContext = new MyContext();
         bool status = false;
+        int id;
         Validation valid = new Validation(myContext);
 
         public List<TB_M_Suppliers> Get()
@@ -47,7 +48,7 @@ namespace DAY4BootcampV2
             return valid.validation();
         }
 
-        public bool Update(int id, TB_M_Suppliers supplier)
+        public bool Update(TB_M_Suppliers supplier)
         {
             //throw new NotImplementedException();
             //TB_M_Suppliers getID = new TB_M_Suppliers();
@@ -57,7 +58,7 @@ namespace DAY4BootcampV2
                 string Name;
                 Console.Write("Insert Name : ");
                 Name = Console.ReadLine();
-                supplier.Name = Name;
+                suppliers.Name = Name;
                 myContext.Entry(suppliers).State = EntityState.Modified;
                 //var result = (myContext.SaveChanges());
                 //Validation valid = new Validation();
@@ -71,7 +72,7 @@ namespace DAY4BootcampV2
             return status;
         }
 
-        public bool Delete(int id)
+        public bool Delete()
         {
             //throw new NotImplementedException();
             suppliers = Get(id);

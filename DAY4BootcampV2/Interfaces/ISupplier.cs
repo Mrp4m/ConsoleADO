@@ -12,7 +12,7 @@ namespace DAY4BootcampV2
         List<TB_M_Suppliers> Get();
         TB_M_Suppliers Get(int id);
         bool Insert(TB_M_Suppliers supplier);
-        bool Update(int id, TB_M_Suppliers supplier);
-        bool Delete(int id);
+        bool Update(TB_M_Suppliers supplier);
+        bool Delete();
     }
 }

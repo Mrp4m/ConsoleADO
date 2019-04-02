@@ -12,7 +12,7 @@ namespace DAY4BootcampV2
         List<TB_M_Items> Get();
         TB_M_Items Get(int id);
         bool Insert(TB_M_Items item);
-        bool Update(int id, TB_M_Items item);
-        bool Delete(int id);
+        bool Update(TB_M_Items item);
+        bool Delete();
     }
 }
