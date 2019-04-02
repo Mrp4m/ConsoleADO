@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="YourDBModelStoreContainer" CdmEntityContainer="MyContext">
+    <EntitySetMapping Name="TB_M_Items">
+      <EntityTypeMapping TypeName="YourDBModel.TB_M_Items">
+        <MappingFragment StoreEntitySet="TB_M_Items">
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Suppliers_id" ColumnName="Suppliers_id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_M_Sells">
+      <EntityTypeMapping TypeName="YourDBModel.TB_M_Sells">
+        <MappingFragment StoreEntitySet="TB_M_Sells">
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_M_Suppliers">
+      <EntityTypeMapping TypeName="YourDBModel.TB_M_Suppliers">
+        <MappingFragment StoreEntitySet="TB_M_Suppliers">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_T_TransactionItems">
+      <EntityTypeMapping TypeName="YourDBModel.TB_T_TransactionItems">
+        <MappingFragment StoreEntitySet="TB_T_TransactionItems">
+          <ScalarProperty Name="TB_M_Sells_id" ColumnName="TB_M_Sells_id" />
+          <ScalarProperty Name="TB_M_Items_id" ColumnName="TB_M_Items_id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

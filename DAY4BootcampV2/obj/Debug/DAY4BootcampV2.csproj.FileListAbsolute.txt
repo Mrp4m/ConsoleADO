@@ -1,0 +1,10 @@
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\bin\Debug\DAY4BootcampV2.exe.config
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\bin\Debug\DAY4BootcampV2.exe
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\bin\Debug\DAY4BootcampV2.pdb
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\bin\Debug\EntityFramework.dll
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\bin\Debug\EntityFramework.SqlServer.dll
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\bin\Debug\EntityFramework.xml
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\bin\Debug\EntityFramework.SqlServer.xml
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\obj\Debug\DAY4BootcampV2.exe
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\obj\Debug\DAY4BootcampV2.pdb
+E:\B O O T C A M P\VISUALSTUDIO\DAY4BootcampV2\DAY4BootcampV2\obj\Debug\DAY4BootcampV2.csprojResolveAssemblyReference.cache
