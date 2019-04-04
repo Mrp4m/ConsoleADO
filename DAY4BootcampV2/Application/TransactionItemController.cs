@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAY4BootcampV2.Models;
+using DAY4BootcampV2.ViewModels;
 
 namespace DAY4BootcampV2.Application
 {
@@ -25,25 +26,25 @@ namespace DAY4BootcampV2.Application
 
         public List<TB_T_TransactionItems> Get()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return myContext.TB_T_TransactionItems.ToList();
         }
 
         public TB_T_TransactionItems Get(int id)
         {
             //throw new NotImplementedException();
-            var get = myContext.TB_T_TransactionItems.Find(id);
-            return get;
+            return myContext.TB_T_TransactionItems.SingleOrDefault(x => x.Id == id);
         }
 
         public bool Insert(TB_T_TransactionItems item)
         {
             //throw new NotImplementedException();
-            //string Name;
+            string Name;
             int Quantity, item_id, sell_id;
             string date;
             sells.OrderDate = DateTime.Now;
             iSell.Insert(sells);
-            
+
             Console.Write("Insert Quantity : ");
             Quantity = Convert.ToInt16(Console.ReadLine());
             Console.Write("Insert Item ID : ");
@@ -56,11 +57,8 @@ namespace DAY4BootcampV2.Application
 
             myContext.TB_T_TransactionItems.Add(transactionItem);
             //var result = (myContext.SaveChanges());
-           
+
             return valid.validation();
-
-            //ICollection<TB_T_TransactionItems> transactionItem = new ICollection<TB_T_TransactionItems>();
-
         }
 
         public bool Update(int id, TB_T_TransactionItems item)

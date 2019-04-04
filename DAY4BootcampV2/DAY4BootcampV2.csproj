@@ -92,6 +92,8 @@
       <DependentUpon>MyModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Core\Validation.cs" />
+    <Compile Include="ViewModels\TB_M_Items_VM.cs" />
+    <Compile Include="ViewModels\TB_T_TransactionItems_VM.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

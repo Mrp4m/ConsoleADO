@@ -1,6 +1,7 @@
 ﻿using DAY4BootcampV2.Application;
 using DAY4BootcampV2.Interfaces;
 using DAY4BootcampV2.Models;
+using DAY4BootcampV2.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace DAY4BootcampV2
             TB_M_Items item = new TB_M_Items();
             TB_M_Sells sell = new TB_M_Sells();
             TB_T_TransactionItems transactionItem = new TB_T_TransactionItems();
+            TB_T_TransactionItems_VM transactionItems_VM = new TB_T_TransactionItems_VM(); 
 
             ISupplier iSupplier;
             iSupplier = new SupplierController();
@@ -140,16 +142,8 @@ namespace DAY4BootcampV2
                         Console.Read();
                         break;
                     case 3:
-                        Console.Write("Masukan ID : ");
-                        id = Convert.ToInt16(Console.ReadLine());
-                        iItem.Update(item);
-                        Console.Read();
                         break;
                     case 4:
-                        Console.Write("Masukan ID : ");
-                        id = Convert.ToInt16(Console.ReadLine());
-                        iItem.Delete();
-                        Console.Read();
                         break;
                     default:
                         Console.Write("Maaf");
